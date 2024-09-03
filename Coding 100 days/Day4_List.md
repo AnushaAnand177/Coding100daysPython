@@ -284,5 +284,21 @@ print(grid[1][1])  # Output: X
 grid[0][0] = 'O'
 ```
 
+#### NOTE IMPORTANT
+### Append - Combining Lists
+```python
+letters_list = alphabets.append(Alphabets)
+```
+To combine alphabets and Alphabets into a single list. 
+the `append()` wilp method actually add an entire object (like another list) as a single element to the list. 
+So this line is incorrect if you want to combine the two lists; instead, 
+you should use the `extend()` method or simply concatenate the lists:
+
+```python
+letters_list = alphabets + Alphabets
+```
+Now, `letters_list` will contain all the lowercase and uppercase letters.
+
+
 
 
