@@ -1,3 +1,6 @@
+import os
+
+
 def calculator():
     # Initialize the result variable to None
     result = None
@@ -13,7 +16,7 @@ def calculator():
         operator = input("Enter an operator (+, -, *, /) or 'exit' to quit: ")
 
         if operator == 'exit':
-            print("Exiting the calculator.")
+            os.system('cls' if os.name == 'nt' else 'clear')
             break
 
         num2 = float(input("Enter the second number: "))

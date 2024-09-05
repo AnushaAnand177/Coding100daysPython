@@ -1,4 +1,7 @@
 # Define individual operation functions
+import os
+
+
 def add(a, b):
     return a + b
 
@@ -50,7 +53,7 @@ def calculator():
             print(f"\nYOU WILL CONTINUE CALCULATING WITH: {first_num}")
         elif choice == 5:
             want_to_calculate = False
-            print("Exiting the calculator. Goodbye!")
+            os.system('cls' if os.name == 'nt' else 'clear')
         else:
             print("INVALID CHOICE")
 
