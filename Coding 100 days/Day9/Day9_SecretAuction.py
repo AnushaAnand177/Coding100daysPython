@@ -1,4 +1,3 @@
-from turtle import clear
 import Day9_SecretAuction_Logo
 
 for lines in Day9_SecretAuction_Logo.logo:
