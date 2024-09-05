@@ -1,5 +1,8 @@
 from turtle import clear
+import Day9_SecretAuction_Logo
 
+for lines in Day9_SecretAuction_Logo.logo:
+    print(lines)
 print("WELCOME TO THE SECRET AUCTION")
 
 bids = {}
@@ -28,3 +31,5 @@ while not bidding_finished:
         find_highest_bidder(bids)
     elif should_continue == "yes":
         print("\n" * 100)
+        for lines in Day9_SecretAuction_Logo.logo:
+            print(lines)
