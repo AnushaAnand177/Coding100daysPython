@@ -5,12 +5,12 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 def compare(user_score, computer_score):
     """Comparing scores of both players"""
-    if user_score == 21:
-        is_game_over = True
-        print("You win 😁")
-    elif computer_score == 21:
+    if computer_score == 21:
         is_game_over = True
         print("You lose 😤")
+    elif user_score == 21:
+        is_game_over = True
+        print("You win 😁")
     elif user_score == computer_score:
         is_game_over = True
         print("Draw 😵")
@@ -75,12 +75,10 @@ def blackjack_game():
         computer_score = sum(computer_cards)
         while computer_score < 17:
             computer_cards.append(random.choice(cards))
-            computer_score = sum(computer_cards)
             if sum(computer_cards) > 21 and 11 in computer_cards:
                 computer_cards.remove(11)
                 computer_cards.append(1)
             computer_score = sum(computer_cards)
-        print(f"Your cards: {user_cards}, current score: {user_score}")
 
         print(f"Your cards: {user_cards}, current score: {sum(user_cards)}")
         print(f"Computer's first card: {computer_cards[0]}")
