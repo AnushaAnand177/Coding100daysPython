@@ -79,6 +79,8 @@ def blackjack_game():
             if sum(computer_cards) > 21 and 11 in computer_cards:
                 computer_cards.remove(11)
                 computer_cards.append(1)
+            computer_score = sum(computer_cards)
+        print(f"Your cards: {user_cards}, current score: {user_score}")
 
         print(f"Your cards: {user_cards}, current score: {sum(user_cards)}")
         print(f"Computer's first card: {computer_cards[0]}")
@@ -94,5 +96,6 @@ def blackjack_game():
             blackjack_game()
         else:
             print("Thanks for playing!")
+            break
 
 blackjack_game()
