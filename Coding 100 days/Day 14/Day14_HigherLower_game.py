@@ -7,7 +7,6 @@ print(logo)
 
 '''-------------------SELECTING DATA--------------------------'''
 
-
 # Created a concise function to select a person's data
 # This returns a dictionary with all necessary information in one go
 def select_data():
@@ -22,7 +21,6 @@ def select_data():
 
 '''------------------------INPUT FROM USER----------------------------'''
 
-
 # Changed the name to `get_user_choice` for clarity
 # This function ensures user input is processed uniformly by using `.strip().upper()`
 def get_user_choice():
@@ -30,7 +28,6 @@ def get_user_choice():
 
 
 '''------------------------CHECK WINNER-----------------------------'''
-
 
 # Created a separate function to handle the comparison logic.
 # It simplifies the main game loop and avoids redundant code for checking 'A' or 'B'
@@ -43,7 +40,6 @@ def is_correct_choice(choice, a_followers, b_followers):
 
 
 '''------------------------MAIN GAME-----------------------------------'''
-
 
 def game():
     score = 0
