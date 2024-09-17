@@ -3,9 +3,12 @@ from Day17_Quiz_question_model import Question
 from Day17_Quiz_brain import quiz
 
 question_bank = []
-for question in question_data:
-    new_question = Question(question['text'],question['answer'])
+for problem in question_data:
+    question_text = problem["question"]
+    question_answer = problem["correct_answer"]
+    new_question = Question(question_text, question_answer)
     question_bank.append(new_question)
+
 
 Trivia = quiz(question_bank)
 
