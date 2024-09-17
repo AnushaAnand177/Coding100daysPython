@@ -94,6 +94,6 @@ def blackjack_game():
             blackjack_game()
         else:
             print("Thanks for playing!")
-            break
+        break
 
 blackjack_game()
