@@ -17,6 +17,11 @@ for color in colors:
 
 #Function to draw spots
 def draw_spots(lines):
+    """
+    This function is responsible for drawing the spots in the painting.
+    The turtle is moved to the starting position and then the dots are drawn
+    in a loop. The turtle is moved to the next row after each row is completed.
+    """
     turtle.hideturtle()
     turtle.penup()
     turtle.setheading(225)
@@ -33,5 +38,4 @@ def draw_spots(lines):
 
 
 draw_spots(10)
-
 screen.exitonclick()
