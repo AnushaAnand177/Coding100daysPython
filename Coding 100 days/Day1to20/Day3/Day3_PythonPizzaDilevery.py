@@ -19,5 +19,4 @@ if extra_cheese == "Y":
     bill += 1
 elif extra_cheese == "N":
     bill += 0
-
 print(f"Your final bill is: ${bill}")
